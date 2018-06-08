@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56b0c576-6363-4f2d-9c27-afefbd722f00" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="a.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="method#toString#0;class#Token#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2085">
+              <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Parser#0;class#Parser#0" expanded="true" />
+                <element signature="method#isLetter#0;class#Parser#0" expanded="true" />
+                <element signature="method#isDigit#0;class#Parser#0" expanded="true" />
+                <element signature="method#isBreak#0;class#Parser#0" expanded="true" />
+                <element signature="method#dealLine#0;class#Parser#0" expanded="true" />
+                <element signature="method#parseAll#0;class#Parser#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Analyzer#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#analyzeAll#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Program#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProgramHead#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProgramName#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#DeclarePart#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#TypeDecpart#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#TypeDec#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#TypeDecList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#TypeDecMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#TypeId#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#TypeDef#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#BaseType#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#StructrueType#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ArrayType#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Low#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Top#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#RecType#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#FieldDecList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#FieldDecMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#IdList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#IdMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VarDecpart#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VarDec#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VarDecList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VarDecMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VarIdList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VarIdMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProcDecpart#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProcDec#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProcDecMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProcName#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ParamList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ParamDecList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ParamMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Param#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#FormList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#FidMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProcDecPart#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProcBody#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ProgramBody#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#StmList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#StmMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Stm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#AssCall#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#AssignmentRest#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ConditionalStm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#LoopStm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#InputStm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Invar#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#OutputStm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ReturnStm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#CallStmRest#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ActParamList#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#ActParamMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#RelExp#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#OtherRelE#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Exp#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#OtherTerm#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Term#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#OtherFactor#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Factor#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#Variable#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#VariMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#FieldVar#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#FieldVarMore#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#CmpOp#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#AddOp#0;class#Analyzer#0" expanded="true" />
+                <element signature="method#MultOp#0;class#Analyzer#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <element signature="method#TreeNode#0;class#TreeNode#0" expanded="true" />
+                <element signature="method#addSon#0;class#TreeNode#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiSyntaxException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="method#MultiSyntaxException#0;class#MultiSyntaxException#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6195">
+              <caret line="650" column="17" lean-forward="false" selection-start-line="650" selection-start-column="17" selection-end-line="650" selection-end-column="17" />
+              <folding>
+                <element signature="method#get#0;class#ArrayList#0" expanded="true" />
+                <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IllegalSyntaxException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="method#IllegalSyntaxException#0;class#IllegalSyntaxException#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IllegalWordException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/IllegalWordException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="method#IllegalWordException#0;class#IllegalWordException#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="initializer##0;class#Dictionary#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>equals</find>
+      <find>boolean</find>
+      <find>IdM</find>
+      <find>DeclarePart</find>
+      <find>isBreak</find>
+      <find>token1.type = 0;</find>
+      <find>array</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>TreeNode</replace>
+    </replaceStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/IllegalWordException.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java" />
+        <option value="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SNL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SNL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SNL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="snlcompiler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SNL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="snlcompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="lexical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SNL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SNL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="snlcompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="syntax" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.a">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.bugjlu.snlcompiler.lexical.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.bugjlu.snlcompiler.lexical.Parser" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SNL" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.bugjlu.snlcompiler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.bugjlu.snlcompiler.a" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SNL" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Parser" />
+      <item index="1" class="java.lang.String" itemvalue="Application.a" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.a" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Parser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56b0c576-6363-4f2d-9c27-afefbd722f00" name="Default" comment="" />
+      <created>1528336632688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528336632688</updated>
+      <workItem from="1528336636245" duration="3649000" />
+      <workItem from="1528343752259" duration="27844000" />
+      <workItem from="1528429767803" duration="2724000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="34217000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5021299" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22420909" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3562586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java</url>
+          <line>600</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="method#toString#0;class#Token#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Parser#0;class#Parser#0" expanded="true" />
+            <element signature="method#isLetter#0;class#Parser#0" expanded="true" />
+            <element signature="method#isDigit#0;class#Parser#0" expanded="true" />
+            <element signature="method#isBreak#0;class#Parser#0" expanded="true" />
+            <element signature="method#dealLine#0;class#Parser#0" expanded="true" />
+            <element signature="method#parseAll#0;class#Parser#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="method#MultiSyntaxException#0;class#MultiSyntaxException#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6195">
+          <caret line="650" column="17" lean-forward="false" selection-start-line="650" selection-start-column="17" selection-end-line="650" selection-end-column="17" />
+          <folding>
+            <element signature="method#get#0;class#ArrayList#0" expanded="true" />
+            <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="method#IllegalSyntaxException#0;class#IllegalSyntaxException#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Dictionary#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8025">
+          <caret line="535" column="0" lean-forward="false" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Analyzer#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#analyzeAll#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Program#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramHead#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramName#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#DeclarePart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeId#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDef#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#BaseType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StructrueType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ArrayType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Low#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Top#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#RecType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#IdList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#IdMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarIdList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarIdMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcName#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Param#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FormList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FidMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecPart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcBody#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramBody#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StmList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StmMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Stm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AssCall#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AssignmentRest#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ConditionalStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#LoopStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#InputStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Invar#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OutputStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ReturnStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#CallStmRest#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ActParamList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ActParamMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#RelExp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherRelE#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Exp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherTerm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Term#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherFactor#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Factor#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Variable#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VariMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldVar#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldVarMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#CmpOp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AddOp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#MultOp#0;class#Analyzer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="method#toString#0;class#Token#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Parser#0;class#Parser#0" expanded="true" />
+            <element signature="method#isLetter#0;class#Parser#0" expanded="true" />
+            <element signature="method#isDigit#0;class#Parser#0" expanded="true" />
+            <element signature="method#isBreak#0;class#Parser#0" expanded="true" />
+            <element signature="method#dealLine#0;class#Parser#0" expanded="true" />
+            <element signature="method#parseAll#0;class#Parser#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Dictionary#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+          <folding>
+            <element signature="method#FileInputStream#0;class#FileInputStream#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="4621" column="9" lean-forward="true" selection-start-line="4621" selection-start-column="9" selection-end-line="4621" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="335" column="21" lean-forward="false" selection-start-line="335" selection-start-column="21" selection-end-line="335" selection-end-column="21" />
+          <folding>
+            <element signature="method#hash#0;class#HashMap#0" expanded="false" />
+            <element signature="method#get#0;class#HashMap#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1454" column="14" lean-forward="false" selection-start-line="1454" selection-start-column="14" selection-end-line="1454" selection-end-column="14" />
+          <folding>
+            <element signature="method#hashCode#0;class#String#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6195">
+          <caret line="650" column="17" lean-forward="false" selection-start-line="650" selection-start-column="17" selection-end-line="650" selection-end-column="17" />
+          <folding>
+            <element signature="method#get#0;class#ArrayList#0" expanded="true" />
+            <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Dictionary#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="method#toString#0;class#Token#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Parser#0;class#Parser#0" expanded="true" />
+            <element signature="method#isLetter#0;class#Parser#0" expanded="true" />
+            <element signature="method#isDigit#0;class#Parser#0" expanded="true" />
+            <element signature="method#isBreak#0;class#Parser#0" expanded="true" />
+            <element signature="method#dealLine#0;class#Parser#0" expanded="true" />
+            <element signature="method#parseAll#0;class#Parser#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="method#MultiSyntaxException#0;class#MultiSyntaxException#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/IllegalWordException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="method#IllegalWordException#0;class#IllegalWordException#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="method#TreeNode#0;class#TreeNode#0" expanded="true" />
+            <element signature="method#addSon#0;class#TreeNode#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="method#IllegalSyntaxException#0;class#IllegalSyntaxException#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Analyzer#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#analyzeAll#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Program#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramHead#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramName#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#DeclarePart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeId#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDef#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#BaseType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StructrueType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ArrayType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Low#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Top#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#RecType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#IdList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#IdMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarIdList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarIdMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcName#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Param#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FormList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FidMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecPart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcBody#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramBody#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StmList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StmMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Stm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AssCall#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AssignmentRest#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ConditionalStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#LoopStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#InputStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Invar#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OutputStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ReturnStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#CallStmRest#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ActParamList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ActParamMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#RelExp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherRelE#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Exp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherTerm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Term#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherFactor#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Factor#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Variable#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VariMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldVar#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldVarMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#CmpOp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AddOp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#MultOp#0;class#Analyzer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SNL</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

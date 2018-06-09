@@ -1,0 +1,707 @@
+Program
+	├─ProgramHead
+	│	├─Token{type=program, value=null}
+	│	└─ProgramName
+	│		└─Token{type=id, value=bubble}
+	├─DeclarePart
+	│	├─TypeDecpart
+	│	├─VarDecpart
+	│	│	└─VarDec
+	│	│		├─Token{type=var, value=null}
+	│	│		└─VarDecList
+	│	│			├─TypeDef
+	│	│			│	└─BaseType
+	│	│			│		└─Token{type=integer, value=null}
+	│	│			├─VarIdList
+	│	│			│	├─Token{type=id, value=i}
+	│	│			│	└─VarIdMore
+	│	│			│		├─Token{type=,, value=null}
+	│	│			│		└─VarIdList
+	│	│			│			├─Token{type=id, value=j}
+	│	│			│			└─VarIdMore
+	│	│			│				├─Token{type=,, value=null}
+	│	│			│				└─VarIdList
+	│	│			│					├─Token{type=id, value=num}
+	│	│			│					└─VarIdMore
+	│	│			├─Token{type=;, value=null}
+	│	│			└─VarDecMore
+	│	│				└─VarDecList
+	│	│					├─TypeDef
+	│	│					│	└─StructrueType
+	│	│					│		└─ArrayType
+	│	│					│			├─Token{type=array, value=null}
+	│	│					│			├─Token{type=[, value=null}
+	│	│					│			├─Low
+	│	│					│			│	└─Token{type=uint, value=1}
+	│	│					│			├─Token{type=., value=null}
+	│	│					│			├─Token{type=., value=null}
+	│	│					│			├─Top
+	│	│					│			│	└─Token{type=uint, value=20}
+	│	│					│			├─Token{type=], value=null}
+	│	│					│			├─Token{type=of, value=null}
+	│	│					│			└─BaseType
+	│	│					│				└─Token{type=integer, value=null}
+	│	│					├─VarIdList
+	│	│					│	├─Token{type=id, value=a}
+	│	│					│	└─VarIdMore
+	│	│					├─Token{type=;, value=null}
+	│	│					└─VarDecMore
+	│	└─ProcDecpart
+	│		└─ProcDec
+	│			├─Token{type=procedure, value=null}
+	│			├─ProcName
+	│			│	└─Token{type=id, value=q}
+	│			├─Token{type=(, value=null}
+	│			├─ParamList
+	│			│	└─ParamDecList
+	│			│		├─Param
+	│			│		│	├─TypeDef
+	│			│		│	│	└─BaseType
+	│			│		│	│		└─Token{type=integer, value=null}
+	│			│		│	└─FormList
+	│			│		│		├─Token{type=id, value=num}
+	│			│		│		└─FidMore
+	│			│		└─ParamMore
+	│			├─Token{type=), value=null}
+	│			├─Token{type=;, value=null}
+	│			├─ProcDecPart
+	│			│	└─DeclarePart
+	│			│		├─TypeDecpart
+	│			│		├─VarDecpart
+	│			│		│	└─VarDec
+	│			│		│		├─Token{type=var, value=null}
+	│			│		│		└─VarDecList
+	│			│		│			├─TypeDef
+	│			│		│			│	└─BaseType
+	│			│		│			│		└─Token{type=integer, value=null}
+	│			│		│			├─VarIdList
+	│			│		│			│	├─Token{type=id, value=i}
+	│			│		│			│	└─VarIdMore
+	│			│		│			│		├─Token{type=,, value=null}
+	│			│		│			│		└─VarIdList
+	│			│		│			│			├─Token{type=id, value=j}
+	│			│		│			│			└─VarIdMore
+	│			│		│			│				├─Token{type=,, value=null}
+	│			│		│			│				└─VarIdList
+	│			│		│			│					├─Token{type=id, value=k}
+	│			│		│			│					└─VarIdMore
+	│			│		│			├─Token{type=;, value=null}
+	│			│		│			└─VarDecMore
+	│			│		│				└─VarDecList
+	│			│		│					├─TypeDef
+	│			│		│					│	└─BaseType
+	│			│		│					│		└─Token{type=integer, value=null}
+	│			│		│					├─VarIdList
+	│			│		│					│	├─Token{type=id, value=t}
+	│			│		│					│	└─VarIdMore
+	│			│		│					├─Token{type=;, value=null}
+	│			│		│					└─VarDecMore
+	│			│		└─ProcDecpart
+	│			├─ProcBody
+	│			│	└─ProgramBody
+	│			│		├─Token{type=begin, value=null}
+	│			│		├─StmList
+	│			│		│	├─Stm
+	│			│		│	│	├─Token{type=id, value=i}
+	│			│		│	│	└─AssCall
+	│			│		│	│		└─AssignmentRest
+	│			│		│	│			├─VariMore
+	│			│		│	│			├─Token{type=:=, value=null}
+	│			│		│	│			└─Exp
+	│			│		│	│				├─Term
+	│			│		│	│				│	├─Factor
+	│			│		│	│				│	│	└─Token{type=uint, value=1}
+	│			│		│	│				│	└─OtherFactor
+	│			│		│	│				└─OtherTerm
+	│			│		│	└─StmMore
+	│			│		│		├─Token{type=;, value=null}
+	│			│		│		└─StmList
+	│			│		│			├─Stm
+	│			│		│			│	└─LoopStm
+	│			│		│			│		├─Token{type=while, value=null}
+	│			│		│			│		├─RelExp
+	│			│		│			│		│	├─Exp
+	│			│		│			│		│	│	├─Term
+	│			│		│			│		│	│	│	├─Factor
+	│			│		│			│		│	│	│	│	└─Variable
+	│			│		│			│		│	│	│	│		├─Token{type=id, value=i}
+	│			│		│			│		│	│	│	│		└─VariMore
+	│			│		│			│		│	│	│	└─OtherFactor
+	│			│		│			│		│	│	└─OtherTerm
+	│			│		│			│		│	└─OtherRelE
+	│			│		│			│		│		├─CmpOp
+	│			│		│			│		│		│	└─Token{type=<, value=null}
+	│			│		│			│		│		└─Exp
+	│			│		│			│		│			├─Term
+	│			│		│			│		│			│	├─Factor
+	│			│		│			│		│			│	│	└─Variable
+	│			│		│			│		│			│	│		├─Token{type=id, value=num}
+	│			│		│			│		│			│	│		└─VariMore
+	│			│		│			│		│			│	└─OtherFactor
+	│			│		│			│		│			└─OtherTerm
+	│			│		│			│		├─Token{type=do, value=null}
+	│			│		│			│		├─StmList
+	│			│		│			│		│	├─Stm
+	│			│		│			│		│	│	├─Token{type=id, value=j}
+	│			│		│			│		│	│	└─AssCall
+	│			│		│			│		│	│		└─AssignmentRest
+	│			│		│			│		│	│			├─VariMore
+	│			│		│			│		│	│			├─Token{type=:=, value=null}
+	│			│		│			│		│	│			└─Exp
+	│			│		│			│		│	│				├─Term
+	│			│		│			│		│	│				│	├─Factor
+	│			│		│			│		│	│				│	│	└─Variable
+	│			│		│			│		│	│				│	│		├─Token{type=id, value=num}
+	│			│		│			│		│	│				│	│		└─VariMore
+	│			│		│			│		│	│				│	└─OtherFactor
+	│			│		│			│		│	│				└─OtherTerm
+	│			│		│			│		│	│					├─AddOp
+	│			│		│			│		│	│					│	└─Token{type=-, value=null}
+	│			│		│			│		│	│					└─Exp
+	│			│		│			│		│	│						├─Term
+	│			│		│			│		│	│						│	├─Factor
+	│			│		│			│		│	│						│	│	└─Variable
+	│			│		│			│		│	│						│	│		├─Token{type=id, value=i}
+	│			│		│			│		│	│						│	│		└─VariMore
+	│			│		│			│		│	│						│	└─OtherFactor
+	│			│		│			│		│	│						└─OtherTerm
+	│			│		│			│		│	│							├─AddOp
+	│			│		│			│		│	│							│	└─Token{type=+, value=null}
+	│			│		│			│		│	│							└─Exp
+	│			│		│			│		│	│								├─Term
+	│			│		│			│		│	│								│	├─Factor
+	│			│		│			│		│	│								│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│	│								│	└─OtherFactor
+	│			│		│			│		│	│								└─OtherTerm
+	│			│		│			│		│	└─StmMore
+	│			│		│			│		│		├─Token{type=;, value=null}
+	│			│		│			│		│		└─StmList
+	│			│		│			│		│			├─Stm
+	│			│		│			│		│			│	├─Token{type=id, value=k}
+	│			│		│			│		│			│	└─AssCall
+	│			│		│			│		│			│		└─AssignmentRest
+	│			│		│			│		│			│			├─VariMore
+	│			│		│			│		│			│			├─Token{type=:=, value=null}
+	│			│		│			│		│			│			└─Exp
+	│			│		│			│		│			│				├─Term
+	│			│		│			│		│			│				│	├─Factor
+	│			│		│			│		│			│				│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│			│				│	└─OtherFactor
+	│			│		│			│		│			│				└─OtherTerm
+	│			│		│			│		│			└─StmMore
+	│			│		│			│		│				├─Token{type=;, value=null}
+	│			│		│			│		│				└─StmList
+	│			│		│			│		│					├─Stm
+	│			│		│			│		│					│	└─LoopStm
+	│			│		│			│		│					│		├─Token{type=while, value=null}
+	│			│		│			│		│					│		├─RelExp
+	│			│		│			│		│					│		│	├─Exp
+	│			│		│			│		│					│		│	│	├─Term
+	│			│		│			│		│					│		│	│	│	├─Factor
+	│			│		│			│		│					│		│	│	│	│	└─Variable
+	│			│		│			│		│					│		│	│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│	└─OtherTerm
+	│			│		│			│		│					│		│	└─OtherRelE
+	│			│		│			│		│					│		│		├─CmpOp
+	│			│		│			│		│					│		│		│	└─Token{type=<, value=null}
+	│			│		│			│		│					│		│		└─Exp
+	│			│		│			│		│					│		│			├─Term
+	│			│		│			│		│					│		│			│	├─Factor
+	│			│		│			│		│					│		│			│	│	└─Variable
+	│			│		│			│		│					│		│			│	│		├─Token{type=id, value=j}
+	│			│		│			│		│					│		│			│	│		└─VariMore
+	│			│		│			│		│					│		│			│	└─OtherFactor
+	│			│		│			│		│					│		│			└─OtherTerm
+	│			│		│			│		│					│		├─Token{type=do, value=null}
+	│			│		│			│		│					│		├─StmList
+	│			│		│			│		│					│		│	├─Stm
+	│			│		│			│		│					│		│	│	└─ConditionalStm
+	│			│		│			│		│					│		│	│		├─Token{type=if, value=null}
+	│			│		│			│		│					│		│	│		├─RelExp
+	│			│		│			│		│					│		│	│		│	├─Exp
+	│			│		│			│		│					│		│	│		│	│	├─Term
+	│			│		│			│		│					│		│	│		│	│	│	├─Factor
+	│			│		│			│		│					│		│	│		│	│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│	│	│	│		├─Token{type=id, value=a}
+	│			│		│			│		│					│		│	│		│	│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│	│	│	│			├─Token{type=[, value=null}
+	│			│		│			│		│					│		│	│		│	│	│	│			├─Exp
+	│			│		│			│		│					│		│	│		│	│	│	│			│	├─Term
+	│			│		│			│		│					│		│	│		│	│	│	│			│	│	├─Factor
+	│			│		│			│		│					│		│	│		│	│	│	│			│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│	│	│	│			│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│		│	│	│	│			│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│	│	│	│			│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│	│	│	│			│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│	│	│	│			│		├─AddOp
+	│			│		│			│		│					│		│	│		│	│	│	│			│		│	└─Token{type=+, value=null}
+	│			│		│			│		│					│		│	│		│	│	│	│			│		└─Exp
+	│			│		│			│		│					│		│	│		│	│	│	│			│			├─Term
+	│			│		│			│		│					│		│	│		│	│	│	│			│			│	├─Factor
+	│			│		│			│		│					│		│	│		│	│	│	│			│			│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│					│		│	│		│	│	│	│			│			│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│	│	│	│			│			└─OtherTerm
+	│			│		│			│		│					│		│	│		│	│	│	│			└─Token{type=], value=null}
+	│			│		│			│		│					│		│	│		│	│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│	│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│	└─OtherRelE
+	│			│		│			│		│					│		│	│		│		├─CmpOp
+	│			│		│			│		│					│		│	│		│		│	└─Token{type=<, value=null}
+	│			│		│			│		│					│		│	│		│		└─Exp
+	│			│		│			│		│					│		│	│		│			├─Term
+	│			│		│			│		│					│		│	│		│			│	├─Factor
+	│			│		│			│		│					│		│	│		│			│	│	└─Variable
+	│			│		│			│		│					│		│	│		│			│	│		├─Token{type=id, value=a}
+	│			│		│			│		│					│		│	│		│			│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│			│	│			├─Token{type=[, value=null}
+	│			│		│			│		│					│		│	│		│			│	│			├─Exp
+	│			│		│			│		│					│		│	│		│			│	│			│	├─Term
+	│			│		│			│		│					│		│	│		│			│	│			│	│	├─Factor
+	│			│		│			│		│					│		│	│		│			│	│			│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│			│	│			│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│		│			│	│			│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│			│	│			│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│			│	│			│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│			│	│			└─Token{type=], value=null}
+	│			│		│			│		│					│		│	│		│			│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│			└─OtherTerm
+	│			│		│			│		│					│		│	│		├─Token{type=then, value=null}
+	│			│		│			│		│					│		│	│		├─StmList
+	│			│		│			│		│					│		│	│		│	├─Stm
+	│			│		│			│		│					│		│	│		│	│	├─Token{type=id, value=t}
+	│			│		│			│		│					│		│	│		│	│	└─AssCall
+	│			│		│			│		│					│		│	│		│	│		└─AssignmentRest
+	│			│		│			│		│					│		│	│		│	│			├─VariMore
+	│			│		│			│		│					│		│	│		│	│			├─Token{type=:=, value=null}
+	│			│		│			│		│					│		│	│		│	│			└─Exp
+	│			│		│			│		│					│		│	│		│	│				├─Term
+	│			│		│			│		│					│		│	│		│	│				│	├─Factor
+	│			│		│			│		│					│		│	│		│	│				│	│	└─Variable
+	│			│		│			│		│					│		│	│		│	│				│	│		├─Token{type=id, value=a}
+	│			│		│			│		│					│		│	│		│	│				│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│	│				│	│			├─Token{type=[, value=null}
+	│			│		│			│		│					│		│	│		│	│				│	│			├─Exp
+	│			│		│			│		│					│		│	│		│	│				│	│			│	├─Term
+	│			│		│			│		│					│		│	│		│	│				│	│			│	│	├─Factor
+	│			│		│			│		│					│		│	│		│	│				│	│			│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│	│				│	│			│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│		│	│				│	│			│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│	│				│	│			│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│	│				│	│			│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│	│				│	│			└─Token{type=], value=null}
+	│			│		│			│		│					│		│	│		│	│				│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│	│				└─OtherTerm
+	│			│		│			│		│					│		│	│		│	└─StmMore
+	│			│		│			│		│					│		│	│		│		├─Token{type=;, value=null}
+	│			│		│			│		│					│		│	│		│		└─StmList
+	│			│		│			│		│					│		│	│		│			├─Stm
+	│			│		│			│		│					│		│	│		│			│	├─Token{type=id, value=a}
+	│			│		│			│		│					│		│	│		│			│	└─AssCall
+	│			│		│			│		│					│		│	│		│			│		└─AssignmentRest
+	│			│		│			│		│					│		│	│		│			│			├─VariMore
+	│			│		│			│		│					│		│	│		│			│			│	├─Token{type=[, value=null}
+	│			│		│			│		│					│		│	│		│			│			│	├─Exp
+	│			│		│			│		│					│		│	│		│			│			│	│	├─Term
+	│			│		│			│		│					│		│	│		│			│			│	│	│	├─Factor
+	│			│		│			│		│					│		│	│		│			│			│	│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│			│			│	│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│		│			│			│	│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│			│			│	│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│			│			│	│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│			│			│	└─Token{type=], value=null}
+	│			│		│			│		│					│		│	│		│			│			├─Token{type=:=, value=null}
+	│			│		│			│		│					│		│	│		│			│			└─Exp
+	│			│		│			│		│					│		│	│		│			│				├─Term
+	│			│		│			│		│					│		│	│		│			│				│	├─Factor
+	│			│		│			│		│					│		│	│		│			│				│	│	└─Variable
+	│			│		│			│		│					│		│	│		│			│				│	│		├─Token{type=id, value=a}
+	│			│		│			│		│					│		│	│		│			│				│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│			│				│	│			├─Token{type=[, value=null}
+	│			│		│			│		│					│		│	│		│			│				│	│			├─Exp
+	│			│		│			│		│					│		│	│		│			│				│	│			│	├─Term
+	│			│		│			│		│					│		│	│		│			│				│	│			│	│	├─Factor
+	│			│		│			│		│					│		│	│		│			│				│	│			│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│			│				│	│			│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│		│			│				│	│			│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│			│				│	│			│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│			│				│	│			│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│			│				│	│			│		├─AddOp
+	│			│		│			│		│					│		│	│		│			│				│	│			│		│	└─Token{type=+, value=null}
+	│			│		│			│		│					│		│	│		│			│				│	│			│		└─Exp
+	│			│		│			│		│					│		│	│		│			│				│	│			│			├─Term
+	│			│		│			│		│					│		│	│		│			│				│	│			│			│	├─Factor
+	│			│		│			│		│					│		│	│		│			│				│	│			│			│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│					│		│	│		│			│				│	│			│			│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│			│				│	│			│			└─OtherTerm
+	│			│		│			│		│					│		│	│		│			│				│	│			└─Token{type=], value=null}
+	│			│		│			│		│					│		│	│		│			│				│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│			│				└─OtherTerm
+	│			│		│			│		│					│		│	│		│			└─StmMore
+	│			│		│			│		│					│		│	│		│				├─Token{type=;, value=null}
+	│			│		│			│		│					│		│	│		│				└─StmList
+	│			│		│			│		│					│		│	│		│					├─Stm
+	│			│		│			│		│					│		│	│		│					│	├─Token{type=id, value=a}
+	│			│		│			│		│					│		│	│		│					│	└─AssCall
+	│			│		│			│		│					│		│	│		│					│		└─AssignmentRest
+	│			│		│			│		│					│		│	│		│					│			├─VariMore
+	│			│		│			│		│					│		│	│		│					│			│	├─Token{type=[, value=null}
+	│			│		│			│		│					│		│	│		│					│			│	├─Exp
+	│			│		│			│		│					│		│	│		│					│			│	│	├─Term
+	│			│		│			│		│					│		│	│		│					│			│	│	│	├─Factor
+	│			│		│			│		│					│		│	│		│					│			│	│	│	│	└─Variable
+	│			│		│			│		│					│		│	│		│					│			│	│	│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│	│		│					│			│	│	│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│					│			│	│	│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│					│			│	│	└─OtherTerm
+	│			│		│			│		│					│		│	│		│					│			│	│		├─AddOp
+	│			│		│			│		│					│		│	│		│					│			│	│		│	└─Token{type=+, value=null}
+	│			│		│			│		│					│		│	│		│					│			│	│		└─Exp
+	│			│		│			│		│					│		│	│		│					│			│	│			├─Term
+	│			│		│			│		│					│		│	│		│					│			│	│			│	├─Factor
+	│			│		│			│		│					│		│	│		│					│			│	│			│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│					│		│	│		│					│			│	│			│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│					│			│	│			└─OtherTerm
+	│			│		│			│		│					│		│	│		│					│			│	└─Token{type=], value=null}
+	│			│		│			│		│					│		│	│		│					│			├─Token{type=:=, value=null}
+	│			│		│			│		│					│		│	│		│					│			└─Exp
+	│			│		│			│		│					│		│	│		│					│				├─Term
+	│			│		│			│		│					│		│	│		│					│				│	├─Factor
+	│			│		│			│		│					│		│	│		│					│				│	│	└─Variable
+	│			│		│			│		│					│		│	│		│					│				│	│		├─Token{type=id, value=t}
+	│			│		│			│		│					│		│	│		│					│				│	│		└─VariMore
+	│			│		│			│		│					│		│	│		│					│				│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│					│				└─OtherTerm
+	│			│		│			│		│					│		│	│		│					└─StmMore
+	│			│		│			│		│					│		│	│		├─Token{type=else, value=null}
+	│			│		│			│		│					│		│	│		├─StmList
+	│			│		│			│		│					│		│	│		│	├─Stm
+	│			│		│			│		│					│		│	│		│	│	├─Token{type=id, value=temp}
+	│			│		│			│		│					│		│	│		│	│	└─AssCall
+	│			│		│			│		│					│		│	│		│	│		└─AssignmentRest
+	│			│		│			│		│					│		│	│		│	│			├─VariMore
+	│			│		│			│		│					│		│	│		│	│			├─Token{type=:=, value=null}
+	│			│		│			│		│					│		│	│		│	│			└─Exp
+	│			│		│			│		│					│		│	│		│	│				├─Term
+	│			│		│			│		│					│		│	│		│	│				│	├─Factor
+	│			│		│			│		│					│		│	│		│	│				│	│	└─Token{type=uint, value=0}
+	│			│		│			│		│					│		│	│		│	│				│	└─OtherFactor
+	│			│		│			│		│					│		│	│		│	│				└─OtherTerm
+	│			│		│			│		│					│		│	│		│	└─StmMore
+	│			│		│			│		│					│		│	│		└─Token{type=fi, value=null}
+	│			│		│			│		│					│		│	└─StmMore
+	│			│		│			│		│					│		│		├─Token{type=;, value=null}
+	│			│		│			│		│					│		│		└─StmList
+	│			│		│			│		│					│		│			├─Stm
+	│			│		│			│		│					│		│			│	├─Token{type=id, value=k}
+	│			│		│			│		│					│		│			│	└─AssCall
+	│			│		│			│		│					│		│			│		└─AssignmentRest
+	│			│		│			│		│					│		│			│			├─VariMore
+	│			│		│			│		│					│		│			│			├─Token{type=:=, value=null}
+	│			│		│			│		│					│		│			│			└─Exp
+	│			│		│			│		│					│		│			│				├─Term
+	│			│		│			│		│					│		│			│				│	├─Factor
+	│			│		│			│		│					│		│			│				│	│	└─Variable
+	│			│		│			│		│					│		│			│				│	│		├─Token{type=id, value=k}
+	│			│		│			│		│					│		│			│				│	│		└─VariMore
+	│			│		│			│		│					│		│			│				│	└─OtherFactor
+	│			│		│			│		│					│		│			│				└─OtherTerm
+	│			│		│			│		│					│		│			│					├─AddOp
+	│			│		│			│		│					│		│			│					│	└─Token{type=+, value=null}
+	│			│		│			│		│					│		│			│					└─Exp
+	│			│		│			│		│					│		│			│						├─Term
+	│			│		│			│		│					│		│			│						│	├─Factor
+	│			│		│			│		│					│		│			│						│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│					│		│			│						│	└─OtherFactor
+	│			│		│			│		│					│		│			│						└─OtherTerm
+	│			│		│			│		│					│		│			└─StmMore
+	│			│		│			│		│					│		└─Token{type=endwh, value=null}
+	│			│		│			│		│					└─StmMore
+	│			│		│			│		│						├─Token{type=;, value=null}
+	│			│		│			│		│						└─StmList
+	│			│		│			│		│							├─Stm
+	│			│		│			│		│							│	├─Token{type=id, value=i}
+	│			│		│			│		│							│	└─AssCall
+	│			│		│			│		│							│		└─AssignmentRest
+	│			│		│			│		│							│			├─VariMore
+	│			│		│			│		│							│			├─Token{type=:=, value=null}
+	│			│		│			│		│							│			└─Exp
+	│			│		│			│		│							│				├─Term
+	│			│		│			│		│							│				│	├─Factor
+	│			│		│			│		│							│				│	│	└─Variable
+	│			│		│			│		│							│				│	│		├─Token{type=id, value=i}
+	│			│		│			│		│							│				│	│		└─VariMore
+	│			│		│			│		│							│				│	└─OtherFactor
+	│			│		│			│		│							│				└─OtherTerm
+	│			│		│			│		│							│					├─AddOp
+	│			│		│			│		│							│					│	└─Token{type=+, value=null}
+	│			│		│			│		│							│					└─Exp
+	│			│		│			│		│							│						├─Term
+	│			│		│			│		│							│						│	├─Factor
+	│			│		│			│		│							│						│	│	└─Token{type=uint, value=1}
+	│			│		│			│		│							│						│	└─OtherFactor
+	│			│		│			│		│							│						└─OtherTerm
+	│			│		│			│		│							└─StmMore
+	│			│		│			│		└─Token{type=endwh, value=null}
+	│			│		│			└─StmMore
+	│			│		└─Token{type=end, value=null}
+	│			└─ProcDecMore
+	└─ProgramBody
+		├─Token{type=begin, value=null}
+		├─StmList
+		│	├─Stm
+		│	│	└─InputStm
+		│	│		├─Token{type=read, value=null}
+		│	│		├─Token{type=(, value=null}
+		│	│		├─Invar
+		│	│		│	└─Token{type=id, value=num}
+		│	│		└─Token{type=), value=null}
+		│	└─StmMore
+		│		├─Token{type=;, value=null}
+		│		└─StmList
+		│			├─Stm
+		│			│	├─Token{type=id, value=i}
+		│			│	└─AssCall
+		│			│		└─AssignmentRest
+		│			│			├─VariMore
+		│			│			├─Token{type=:=, value=null}
+		│			│			└─Exp
+		│			│				├─Term
+		│			│				│	├─Factor
+		│			│				│	│	└─Token{type=uint, value=1}
+		│			│				│	└─OtherFactor
+		│			│				└─OtherTerm
+		│			└─StmMore
+		│				├─Token{type=;, value=null}
+		│				└─StmList
+		│					├─Stm
+		│					│	└─LoopStm
+		│					│		├─Token{type=while, value=null}
+		│					│		├─RelExp
+		│					│		│	├─Exp
+		│					│		│	│	├─Term
+		│					│		│	│	│	├─Factor
+		│					│		│	│	│	│	└─Variable
+		│					│		│	│	│	│		├─Token{type=id, value=i}
+		│					│		│	│	│	│		└─VariMore
+		│					│		│	│	│	└─OtherFactor
+		│					│		│	│	└─OtherTerm
+		│					│		│	└─OtherRelE
+		│					│		│		├─CmpOp
+		│					│		│		│	└─Token{type=<, value=null}
+		│					│		│		└─Exp
+		│					│		│			├─Term
+		│					│		│			│	├─Factor
+		│					│		│			│	│	├─Token{type=(, value=null}
+		│					│		│			│	│	├─Exp
+		│					│		│			│	│	│	├─Term
+		│					│		│			│	│	│	│	├─Factor
+		│					│		│			│	│	│	│	│	└─Variable
+		│					│		│			│	│	│	│	│		├─Token{type=id, value=num}
+		│					│		│			│	│	│	│	│		└─VariMore
+		│					│		│			│	│	│	│	└─OtherFactor
+		│					│		│			│	│	│	└─OtherTerm
+		│					│		│			│	│	│		├─AddOp
+		│					│		│			│	│	│		│	└─Token{type=+, value=null}
+		│					│		│			│	│	│		└─Exp
+		│					│		│			│	│	│			├─Term
+		│					│		│			│	│	│			│	├─Factor
+		│					│		│			│	│	│			│	│	└─Token{type=uint, value=1}
+		│					│		│			│	│	│			│	└─OtherFactor
+		│					│		│			│	│	│			└─OtherTerm
+		│					│		│			│	│	└─Token{type=), value=null}
+		│					│		│			│	└─OtherFactor
+		│					│		│			└─OtherTerm
+		│					│		├─Token{type=do, value=null}
+		│					│		├─StmList
+		│					│		│	├─Stm
+		│					│		│	│	└─InputStm
+		│					│		│	│		├─Token{type=read, value=null}
+		│					│		│	│		├─Token{type=(, value=null}
+		│					│		│	│		├─Invar
+		│					│		│	│		│	└─Token{type=id, value=j}
+		│					│		│	│		└─Token{type=), value=null}
+		│					│		│	└─StmMore
+		│					│		│		├─Token{type=;, value=null}
+		│					│		│		└─StmList
+		│					│		│			├─Stm
+		│					│		│			│	├─Token{type=id, value=a}
+		│					│		│			│	└─AssCall
+		│					│		│			│		└─AssignmentRest
+		│					│		│			│			├─VariMore
+		│					│		│			│			│	├─Token{type=[, value=null}
+		│					│		│			│			│	├─Exp
+		│					│		│			│			│	│	├─Term
+		│					│		│			│			│	│	│	├─Factor
+		│					│		│			│			│	│	│	│	└─Variable
+		│					│		│			│			│	│	│	│		├─Token{type=id, value=i}
+		│					│		│			│			│	│	│	│		└─VariMore
+		│					│		│			│			│	│	│	└─OtherFactor
+		│					│		│			│			│	│	└─OtherTerm
+		│					│		│			│			│	└─Token{type=], value=null}
+		│					│		│			│			├─Token{type=:=, value=null}
+		│					│		│			│			└─Exp
+		│					│		│			│				├─Term
+		│					│		│			│				│	├─Factor
+		│					│		│			│				│	│	└─Variable
+		│					│		│			│				│	│		├─Token{type=id, value=j}
+		│					│		│			│				│	│		└─VariMore
+		│					│		│			│				│	└─OtherFactor
+		│					│		│			│				└─OtherTerm
+		│					│		│			└─StmMore
+		│					│		│				├─Token{type=;, value=null}
+		│					│		│				└─StmList
+		│					│		│					├─Stm
+		│					│		│					│	├─Token{type=id, value=i}
+		│					│		│					│	└─AssCall
+		│					│		│					│		└─AssignmentRest
+		│					│		│					│			├─VariMore
+		│					│		│					│			├─Token{type=:=, value=null}
+		│					│		│					│			└─Exp
+		│					│		│					│				├─Term
+		│					│		│					│				│	├─Factor
+		│					│		│					│				│	│	└─Variable
+		│					│		│					│				│	│		├─Token{type=id, value=i}
+		│					│		│					│				│	│		└─VariMore
+		│					│		│					│				│	└─OtherFactor
+		│					│		│					│				└─OtherTerm
+		│					│		│					│					├─AddOp
+		│					│		│					│					│	└─Token{type=+, value=null}
+		│					│		│					│					└─Exp
+		│					│		│					│						├─Term
+		│					│		│					│						│	├─Factor
+		│					│		│					│						│	│	└─Token{type=uint, value=1}
+		│					│		│					│						│	└─OtherFactor
+		│					│		│					│						└─OtherTerm
+		│					│		│					└─StmMore
+		│					│		└─Token{type=endwh, value=null}
+		│					└─StmMore
+		│						├─Token{type=;, value=null}
+		│						└─StmList
+		│							├─Stm
+		│							│	├─Token{type=id, value=q}
+		│							│	└─AssCall
+		│							│		└─CallStmRest
+		│							│			├─Token{type=(, value=null}
+		│							│			├─ActParamList
+		│							│			│	├─Exp
+		│							│			│	│	├─Term
+		│							│			│	│	│	├─Factor
+		│							│			│	│	│	│	└─Variable
+		│							│			│	│	│	│		├─Token{type=id, value=num}
+		│							│			│	│	│	│		└─VariMore
+		│							│			│	│	│	└─OtherFactor
+		│							│			│	│	└─OtherTerm
+		│							│			│	└─ActParamMore
+		│							│			└─Token{type=), value=null}
+		│							└─StmMore
+		│								├─Token{type=;, value=null}
+		│								└─StmList
+		│									├─Stm
+		│									│	├─Token{type=id, value=i}
+		│									│	└─AssCall
+		│									│		└─AssignmentRest
+		│									│			├─VariMore
+		│									│			├─Token{type=:=, value=null}
+		│									│			└─Exp
+		│									│				├─Term
+		│									│				│	├─Factor
+		│									│				│	│	└─Token{type=uint, value=1}
+		│									│				│	└─OtherFactor
+		│									│				└─OtherTerm
+		│									└─StmMore
+		│										├─Token{type=;, value=null}
+		│										└─StmList
+		│											├─Stm
+		│											│	└─LoopStm
+		│											│		├─Token{type=while, value=null}
+		│											│		├─RelExp
+		│											│		│	├─Exp
+		│											│		│	│	├─Term
+		│											│		│	│	│	├─Factor
+		│											│		│	│	│	│	└─Variable
+		│											│		│	│	│	│		├─Token{type=id, value=i}
+		│											│		│	│	│	│		└─VariMore
+		│											│		│	│	│	└─OtherFactor
+		│											│		│	│	└─OtherTerm
+		│											│		│	└─OtherRelE
+		│											│		│		├─CmpOp
+		│											│		│		│	└─Token{type=<, value=null}
+		│											│		│		└─Exp
+		│											│		│			├─Term
+		│											│		│			│	├─Factor
+		│											│		│			│	│	├─Token{type=(, value=null}
+		│											│		│			│	│	├─Exp
+		│											│		│			│	│	│	├─Term
+		│											│		│			│	│	│	│	├─Factor
+		│											│		│			│	│	│	│	│	└─Variable
+		│											│		│			│	│	│	│	│		├─Token{type=id, value=num}
+		│											│		│			│	│	│	│	│		└─VariMore
+		│											│		│			│	│	│	│	└─OtherFactor
+		│											│		│			│	│	│	└─OtherTerm
+		│											│		│			│	│	│		├─AddOp
+		│											│		│			│	│	│		│	└─Token{type=+, value=null}
+		│											│		│			│	│	│		└─Exp
+		│											│		│			│	│	│			├─Term
+		│											│		│			│	│	│			│	├─Factor
+		│											│		│			│	│	│			│	│	└─Token{type=uint, value=1}
+		│											│		│			│	│	│			│	└─OtherFactor
+		│											│		│			│	│	│			└─OtherTerm
+		│											│		│			│	│	└─Token{type=), value=null}
+		│											│		│			│	└─OtherFactor
+		│											│		│			└─OtherTerm
+		│											│		├─Token{type=do, value=null}
+		│											│		├─StmList
+		│											│		│	├─Stm
+		│											│		│	│	└─OutputStm
+		│											│		│	│		├─Token{type=write, value=null}
+		│											│		│	│		├─Token{type=(, value=null}
+		│											│		│	│		├─Exp
+		│											│		│	│		│	├─Term
+		│											│		│	│		│	│	├─Factor
+		│											│		│	│		│	│	│	└─Variable
+		│											│		│	│		│	│	│		├─Token{type=id, value=a}
+		│											│		│	│		│	│	│		└─VariMore
+		│											│		│	│		│	│	│			├─Token{type=[, value=null}
+		│											│		│	│		│	│	│			├─Exp
+		│											│		│	│		│	│	│			│	├─Term
+		│											│		│	│		│	│	│			│	│	├─Factor
+		│											│		│	│		│	│	│			│	│	│	└─Variable
+		│											│		│	│		│	│	│			│	│	│		├─Token{type=id, value=i}
+		│											│		│	│		│	│	│			│	│	│		└─VariMore
+		│											│		│	│		│	│	│			│	│	└─OtherFactor
+		│											│		│	│		│	│	│			│	└─OtherTerm
+		│											│		│	│		│	│	│			└─Token{type=], value=null}
+		│											│		│	│		│	│	└─OtherFactor
+		│											│		│	│		│	└─OtherTerm
+		│											│		│	│		└─Token{type=), value=null}
+		│											│		│	└─StmMore
+		│											│		│		├─Token{type=;, value=null}
+		│											│		│		└─StmList
+		│											│		│			├─Stm
+		│											│		│			│	├─Token{type=id, value=i}
+		│											│		│			│	└─AssCall
+		│											│		│			│		└─AssignmentRest
+		│											│		│			│			├─VariMore
+		│											│		│			│			├─Token{type=:=, value=null}
+		│											│		│			│			└─Exp
+		│											│		│			│				├─Term
+		│											│		│			│				│	├─Factor
+		│											│		│			│				│	│	└─Variable
+		│											│		│			│				│	│		├─Token{type=id, value=i}
+		│											│		│			│				│	│		└─VariMore
+		│											│		│			│				│	└─OtherFactor
+		│											│		│			│				└─OtherTerm
+		│											│		│			│					├─AddOp
+		│											│		│			│					│	└─Token{type=+, value=null}
+		│											│		│			│					└─Exp
+		│											│		│			│						├─Term
+		│											│		│			│						│	├─Factor
+		│											│		│			│						│	│	└─Token{type=uint, value=1}
+		│											│		│			│						│	└─OtherFactor
+		│											│		│			│						└─OtherTerm
+		│											│		│			└─StmMore
+		│											│		└─Token{type=endwh, value=null}
+		│											└─StmMore
+		└─Token{type=end, value=null}

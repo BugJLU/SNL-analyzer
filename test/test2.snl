@@ -11,7 +11,7 @@ begin
      k:=1;
      while k<j  do
     	if a[k+1] < a[k]  
-then   program
+then
 	t:=a[k];
 		a[k]:=a[k+1];
 		a[k+1]:=t

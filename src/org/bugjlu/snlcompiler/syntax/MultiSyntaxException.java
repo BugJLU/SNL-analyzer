@@ -10,6 +10,7 @@ public class MultiSyntaxException extends IllegalSyntaxException {
         super.expected = "";
         super.found = "";
         super.line = 0;
+        firstMatch = true;
     }
     public MultiSyntaxException(int line, String syntax) {
         super("syntax analysis error: Wrong syntax at line("+line+"), syntax("+syntax+").");
@@ -17,5 +18,6 @@ public class MultiSyntaxException extends IllegalSyntaxException {
         super.found = "";
         this.line = line;
         this.syntax = syntax;
+        firstMatch = true;
     }
 }

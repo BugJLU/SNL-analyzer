@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class TreeNode {
 
+    public Object getData() {
+        return data;
+    }
+
     Object data;
 
     ArrayList<TreeNode> sonNodes;

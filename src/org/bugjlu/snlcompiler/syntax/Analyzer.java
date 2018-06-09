@@ -16,8 +16,8 @@ public class Analyzer {
         line = 1;
     }
     
-    public void analyzeAll() throws IllegalSyntaxException {
-        Program();
+    public TreeNode analyzeAll() throws IllegalSyntaxException {
+        return Program();
     }
 
 //    boolean match(Integer tokenType) {
@@ -57,23 +57,43 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "Program";
         node.addSon(ProgramHead());
-        node.addSon(DeclarePart());
-        node.addSon(ProgramBody());
+        try {
+            node.addSon(DeclarePart());
+                node.addSon(ProgramBody());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode ProgramHead() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ProgramHead";
-        match("program", node);
-        node.addSon(ProgramName());
+        try {
+            match("program", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(ProgramName());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode ProgramName() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ProgramName";
-        match("id", node);
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
@@ -81,8 +101,13 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "DeclarePart";
         node.addSon(TypeDecpart());
-        node.addSon(VarDecpart());
-        node.addSon(ProcDecpart());
+        try {
+            node.addSon(VarDecpart());
+                node.addSon(ProcDecpart());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
     TreeNode TypeDecpart() throws IllegalSyntaxException {
@@ -92,6 +117,7 @@ public class Analyzer {
             node.addSon(TypeDec());
         } catch (IllegalSyntaxException e) {
             // empty is ok
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -100,8 +126,18 @@ public class Analyzer {
     TreeNode TypeDec() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "TypeDec";
-        match("type", node);
-        node.addSon(TypeDecList());
+        try {
+            match("type", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(TypeDecList());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -110,10 +146,15 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "TypeDecList";
         node.addSon(TypeId());
-        match("=", node);
-        node.addSon(TypeDef());
-        match(";", node);
-        node.addSon(TypeDecMore());
+        try {
+            match("=", node);
+                node.addSon(TypeDef());
+                match(";", node);
+                node.addSon(TypeDecMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -124,6 +165,7 @@ public class Analyzer {
             node.addSon(TypeDecList());
         } catch (IllegalSyntaxException e) {
             // empty is ok
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -131,7 +173,12 @@ public class Analyzer {
     TreeNode TypeId() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "TypeId";
-        match("id", node);
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
@@ -143,18 +190,26 @@ public class Analyzer {
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(StructrueType());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("id", node);
+            try {
+                match("id", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "TypeDef");
     }
@@ -163,16 +218,28 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "BaseType";
         try {
-            match("integer", node);
+            try {
+                match("integer", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("char", node);
+            try {
+                match("char", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "BaseType");
     }
@@ -185,12 +252,14 @@ public class Analyzer {
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(RecType());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "StructrueType");
     }
@@ -198,38 +267,68 @@ public class Analyzer {
     TreeNode ArrayType() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ArrayType";
-        match("array", node);
-        match("[", node);
-        node.addSon(Low());
-        match(".", node);
-        match(".", node);
-        node.addSon(Top());
-        match("]", node);
-        match("of", node);
-        node.addSon(BaseType());
+        try {
+            match("array", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            match("[", node);
+                node.addSon(Low());
+                match(".", node);
+                match(".", node);
+                node.addSon(Top());
+                match("]", node);
+                match("of", node);
+                node.addSon(BaseType());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode Low() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "Low";
-        match("uint", node);
+        try {
+            match("uint", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
     TreeNode Top() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "Top";
-        match("uint", node);
+        try {
+            match("uint", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
     TreeNode RecType() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "RecType";
-        match("record", node);
-        node.addSon(FieldDecList());
-        match("end", node);
+        try {
+            match("record", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(FieldDecList());
+                match("end", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -238,21 +337,33 @@ public class Analyzer {
         node.data = "FieldDecList";
         try {
             node.addSon(BaseType());
-            node.addSon(IdList());
-            match(";", node);
-            node.addSon(FieldDecMore());
+            try {
+                node.addSon(IdList());
+                        match(";", node);
+                        node.addSon(FieldDecMore());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(ArrayType());
-            node.addSon(IdList());
-            match(";", node);
-            node.addSon(FieldDecMore());
+            try {
+                node.addSon(IdList());
+                        match(";", node);
+                        node.addSon(FieldDecMore());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "FieldDecList");
     }
@@ -265,6 +376,7 @@ public class Analyzer {
             node.addSon(FieldDecList());
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -272,8 +384,18 @@ public class Analyzer {
     TreeNode IdList() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "IdList";
-        match("id", node);
-        node.addSon(IdMore());
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(IdMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -281,13 +403,21 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "IdMore";
         try {
-            match(",", node);
-            node.addSon(IdList());
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals(",")) {
+            try {
+                match(",", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(IdList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -299,6 +429,7 @@ public class Analyzer {
             node.addSon(VarDec());
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -306,8 +437,18 @@ public class Analyzer {
     TreeNode VarDec() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "VarDec";
-        match("var", node);
-        node.addSon(VarDecList());
+        try {
+            match("var", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(VarDecList());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -315,9 +456,14 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "VarDecList";
         node.addSon(TypeDef());
-        node.addSon(VarIdList());
-        match(";", node);
-        node.addSon(VarDecMore());
+        try {
+            node.addSon(VarIdList());
+                match(";", node);
+                node.addSon(VarDecMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -328,6 +474,7 @@ public class Analyzer {
             node.addSon(VarDecList());
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -335,8 +482,18 @@ public class Analyzer {
     TreeNode VarIdList() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "VarIdList";
-        match("id", node);
-        node.addSon(VarIdMore());
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(VarIdMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -344,13 +501,21 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "VarIdMore";
         try {
-            match(",", node);
-            node.addSon(VarIdList());
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals(",")) {
+            try {
+                match(",", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(VarIdList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -362,6 +527,7 @@ public class Analyzer {
             node.addSon(ProcDec());
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -369,15 +535,25 @@ public class Analyzer {
     TreeNode ProcDec() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ProcDec";
-        match("procedure", node);
-        node.addSon(ProcName());
-        match("(", node);
-        node.addSon(ParamList());
-        match(")", node);
-        match(";", node);
-        node.addSon(ProcDecPart());
-        node.addSon(ProcBody());
-        node.addSon(ProcDecMore());
+        try {
+            match("procedure", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(ProcName());
+                match("(", node);
+                node.addSon(ParamList());
+                match(")", node);
+                match(";", node);
+                node.addSon(ProcDecPart());
+                node.addSon(ProcBody());
+                node.addSon(ProcDecMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -388,6 +564,7 @@ public class Analyzer {
             node.addSon(ProcDec());
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -395,7 +572,12 @@ public class Analyzer {
     TreeNode ProcName() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ProcName";
-        match("id", node);
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
@@ -406,6 +588,7 @@ public class Analyzer {
             node.addSon(ParamDecList());
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -414,7 +597,12 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "ParamDecList";
         node.addSon(Param());
-        node.addSon(ParamMore());
+        try {
+            node.addSon(ParamMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -422,13 +610,21 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "ParamMore";
         try {
-            match(";", node);
-            node.addSon(ParamDecList());
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals(";")) {
+            try {
+                match(";", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(ParamDecList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -438,18 +634,35 @@ public class Analyzer {
         node.data = "Param";
         try {
             node.addSon(TypeDef());
-            node.addSon(FormList());
+            try {
+                node.addSon(FormList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("var", node);
-            node.addSon(TypeDef());
-            node.addSon(FormList());
+            try {
+                match("var", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
+            try {
+                node.addSon(TypeDef());
+                        node.addSon(FormList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "Param");
     }
@@ -457,8 +670,18 @@ public class Analyzer {
     TreeNode FormList() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "FormList";
-        match("id", node);
-        node.addSon(FidMore());
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(FidMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -466,13 +689,21 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "FidMore";
         try {
-            match(",", node);
-            node.addSon(FormList());
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals(",")) {
+            try {
+                match(",", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(FormList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -494,9 +725,19 @@ public class Analyzer {
     TreeNode ProgramBody() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ProgramBody";
-        match("begin", node);
-        node.addSon(StmList());
-        match("end", node);
+        try {
+            match("begin", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(StmList());
+                match("end", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -504,7 +745,12 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "StmList";
         node.addSon(Stm());
-        node.addSon(StmMore());
+        try {
+            node.addSon(StmMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -512,13 +758,21 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "StmMore";
         try {
-            match(";", node);
-            node.addSon(StmList());
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals(";")) {
+            try {
+                match(";", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(StmList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -531,37 +785,53 @@ public class Analyzer {
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(LoopStm());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(InputStm());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(OutputStm());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(ReturnStm());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("id", node);
-            node.addSon(AssCall());
+            try {
+                match("id", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
+            try {
+                node.addSon(AssCall());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "Stm");
     }
@@ -570,16 +840,18 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "AssCall";
         try {
-            node.addSon(AssignmentRest());
-            return node;
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-        }
-        try {
             node.addSon(CallStmRest());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
+        }
+        try {
+            node.addSon(AssignmentRest());
+            return node;
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "AssCall");
     }
@@ -588,75 +860,140 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "AssignmentRest";
         node.addSon(VariMore());
-        match(":=", node);
-        node.addSon(Exp());
+        try {
+            match(":=", node);
+                node.addSon(Exp());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode ConditionalStm() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ConditionalStm";
-        match("if", node);
-        node.addSon(RelExp());
-        match("then", node);
-        node.addSon(StmList());
-        match("else", node);
-        node.addSon(StmList());
-        match("fi", node);
+        try {
+            match("if", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(RelExp());
+                match("then", node);
+                node.addSon(StmList());
+                match("else", node);
+                node.addSon(StmList());
+                match("fi", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode LoopStm() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "LoopStm";
-        match("while", node);
-        node.addSon(RelExp());
-        match("do", node);
-        node.addSon(StmList());
-        match("endwh", node);
+        try {
+            match("while", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(RelExp());
+                match("do", node);
+                node.addSon(StmList());
+                match("endwh", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode InputStm() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "InputStm";
-        match("read", node);
-        match("(", node);
-        node.addSon(Invar());
-        match(")", node);
+        try {
+            match("read", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            match("(", node);
+                node.addSon(Invar());
+                match(")", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode Invar() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "Invar";
-        match("id", node);
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
     TreeNode OutputStm() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "OutputStm";
-        match("write", node);
-        match("(", node);
-        node.addSon(Exp());
-        match(")", node);
+        try {
+            match("write", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            match("(", node);
+                node.addSon(Exp());
+                match(")", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
     TreeNode ReturnStm() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "ReturnStm";
-        match("return", node);
+        try {
+            match("return", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
         return node;
     }
 
     TreeNode CallStmRest() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "CallStmRest";
-        match("(", node);
-        node.addSon(ActParamList());
-        match(")", node);
+        try {
+            match("(", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(ActParamList());
+                match(")", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -665,12 +1002,15 @@ public class Analyzer {
         node.data = "ActParamList";
         try {
             node.addSon(Exp());
-            node.addSon(ActParamMore());
+            try {
+                node.addSon(ActParamMore());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
         } catch (IllegalSyntaxException e) {
             // multi condition
-//            if (!e.expected.equals(",")) {
-//                throw e;
-//            }
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -679,13 +1019,21 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "ActParamMore";
         try {
-            match(",", node);
-            node.addSon(ActParamList());
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals(",")) {
+            try {
+                match(",", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(ActParamList());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -694,7 +1042,12 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "RelExp";
         node.addSon(Exp());
-        node.addSon(OtherRelE());
+        try {
+            node.addSon(OtherRelE());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -702,7 +1055,12 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "OtherRelE";
         node.addSon(CmpOp());
-        node.addSon(Exp());
+        try {
+            node.addSon(Exp());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -710,7 +1068,12 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "Exp";
         node.addSon(Term());
-        node.addSon(OtherTerm());
+        try {
+            node.addSon(OtherTerm());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -719,12 +1082,15 @@ public class Analyzer {
         node.data = "OtherTerm";
         try {
             node.addSon(AddOp());
-            node.addSon(Exp());
+            try {
+                node.addSon(Exp());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
         } catch (IllegalSyntaxException e) {
             // multi condition
-//            if (!e.expected.equals(",")) {
-//                throw e;
-//            }
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -733,7 +1099,12 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "Term";
         node.addSon(Factor());
-        node.addSon(OtherFactor());
+        try {
+            node.addSon(OtherFactor());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -742,12 +1113,15 @@ public class Analyzer {
         node.data = "OtherFactor";
         try {
             node.addSon(MultOp());
-            node.addSon(Term());
+            try {
+                node.addSon(Term());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
         } catch (IllegalSyntaxException e) {
             // multi condition
-//            if (!e.expected.equals(",")) {
-//                throw e;
-//            }
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -756,24 +1130,42 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "Factor";
         try {
-            match("(", node);
-            node.addSon(Exp());
-            match(")", node);
+            try {
+                match("(", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
+            try {
+                node.addSon(Exp());
+                        match(")", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("uint", node);
+            try {
+                match("uint", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
             node.addSon(Variable());
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "Factor");
     }
@@ -781,8 +1173,18 @@ public class Analyzer {
     TreeNode Variable() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "Variable";
-        match("id", node);
-        node.addSon(VariMore());
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(VariMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -790,25 +1192,41 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "VariMore";
         try {
-            match("[", node);
-            node.addSon(Exp());
-            match("]", node);
+            try {
+                match("[", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
+            try {
+                node.addSon(Exp());
+                        match("]", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
-            if (!e.expected.equals("[")) {
-                throw e;
-            }
+            if (!e.firstMatch) throw e;
         }
         try {
-            match(".", node);
-            node.addSon(FieldVar());
+            try {
+                match(".", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
+            try {
+                node.addSon(FieldVar());
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
-            if (!e.expected.equals(".")) {
-                throw e;
-            }
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -816,8 +1234,18 @@ public class Analyzer {
     TreeNode FieldVar() throws IllegalSyntaxException {
         TreeNode node = new TreeNode();
         node.data = "FieldVar";
-        match("id", node);
-        node.addSon(FieldVarMore());
+        try {
+            match("id", node);
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = true;
+            throw e;
+        }
+        try {
+            node.addSon(FieldVarMore());
+        } catch(IllegalSyntaxException e) {
+            e.firstMatch = false;
+            throw e;
+        }
         return node;
     }
 
@@ -825,14 +1253,22 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "FieldVarMore";
         try {
-            match("[", node);
-            node.addSon(Exp());
-            match("]", node);
-        } catch (IllegalSyntaxException e) {
-            // multi condition
-            if (!e.expected.equals("[")) {
+            try {
+                match("[", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
                 throw e;
             }
+            try {
+                node.addSon(Exp());
+                        match("]", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = false;
+                throw e;
+            }
+        } catch (IllegalSyntaxException e) {
+            // multi condition
+            if (!e.firstMatch) throw e;
         }
         return node;
     }
@@ -841,22 +1277,40 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "CmpOp";
         try {
-            match("<", node);
+            try {
+                match("<", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match(">", node);
+            try {
+                match(">", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("=", node);
+            try {
+                match("=", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "CmpOp");
     }
@@ -865,16 +1319,28 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "AddOp";
         try {
-            match("+", node);
+            try {
+                match("+", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("-", node);
+            try {
+                match("-", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "AddOp");
     }
@@ -883,16 +1349,28 @@ public class Analyzer {
         TreeNode node = new TreeNode();
         node.data = "MultOp";
         try {
-            match("*", node);
+            try {
+                match("*", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         try {
-            match("/", node);
+            try {
+                match("/", node);
+            } catch(IllegalSyntaxException e) {
+                e.firstMatch = true;
+                throw e;
+            }
             return node;
         } catch (IllegalSyntaxException e) {
             // multi condition
+            if (!e.firstMatch) throw e;
         }
         throw new MultiSyntaxException(line, "MultOp");
     }

@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56b0c576-6363-4f2d-9c27-afefbd722f00" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/snl.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/Main.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TokenWriter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TreeWriter.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/a.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/Analyzer.class" afterPath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/Analyzer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.class" afterPath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.class" afterPath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/TreeNode.class" afterPath="$PROJECT_DIR$/out/production/SNL/org/bugjlu/snlcompiler/syntax/TreeNode.class" />
-      <change beforePath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java" afterPath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java" afterPath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java" />
-      <change beforePath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java" afterPath="$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java" />
-      <change beforePath="$PROJECT_DIR$/test/test2.snl" afterPath="$PROJECT_DIR$/test/test2.snl" />
-    </list>
+    <list default="true" id="56b0c576-6363-4f2d-9c27-afefbd722f00" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,12 +15,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SNL" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
+            <state relative-caret-position="660">
               <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -64,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeWriter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TreeWriter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TreeWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+            <state relative-caret-position="465">
+              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TreeWriter#0;class#TreeWriter#0" expanded="true" />
@@ -81,7 +67,7 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1925">
+            <state relative-caret-position="2085">
               <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -96,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7720">
+            <state relative-caret-position="-7455">
               <caret line="746" column="0" lean-forward="false" selection-start-line="746" selection-start-column="0" selection-end-line="746" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -230,7 +216,7 @@
       <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
+            <state relative-caret-position="390">
               <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -296,7 +282,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
@@ -317,7 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,8 +347,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -555,11 +541,12 @@
       <workItem from="1528336636245" duration="3649000" />
       <workItem from="1528343752259" duration="27844000" />
       <workItem from="1528429767803" duration="23564000" />
+      <workItem from="1528636595182" duration="509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55057000" />
+    <option name="totallyTimeSpent" value="55566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -571,12 +558,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.49434572" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -587,20 +573,21 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3562586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26171243" sideWeight="0.5048143" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,14 +623,195 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="660">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#errOut#0;class#Main#0" expanded="true" />
+            <element signature="initializer##0;class#Main#0" expanded="true" />
+            <element signature="method#main#0;class#Main#0" expanded="true" />
+            <element signature="method#checkArgs#0;class#Main#0" expanded="true" />
+            <element signature="method#generateHelpLine#0;class#Main#0" expanded="true" />
+            <element signature="method#help#0;class#Main#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TokenWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Parser#0;class#Parser#0" expanded="true" />
+            <element signature="method#isLetter#0;class#Parser#0" expanded="true" />
+            <element signature="method#isDigit#0;class#Parser#0" expanded="true" />
+            <element signature="method#isBreak#0;class#Parser#0" expanded="true" />
+            <element signature="method#dealLine#0;class#Parser#0" expanded="true" />
+            <element signature="method#parseAll#0;class#Parser#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11190">
+          <caret line="746" column="0" lean-forward="false" selection-start-line="746" selection-start-column="0" selection-end-line="746" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Analyzer#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#analyzeAll#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#match#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Program#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramHead#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramName#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#DeclarePart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeId#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#TypeDef#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#BaseType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StructrueType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ArrayType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Low#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Top#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#RecType#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#IdList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#IdMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarIdList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VarIdMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecpart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDec#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcName#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamDecList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ParamMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Param#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FormList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FidMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcDecPart#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProcBody#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ProgramBody#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#StmMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Stm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AssCall#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AssignmentRest#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ConditionalStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#LoopStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#InputStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Invar#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OutputStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ReturnStm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#CallStmRest#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ActParamList#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#ActParamMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#RelExp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherRelE#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Exp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherTerm#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Term#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#OtherFactor#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Factor#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#Variable#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#VariMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldVar#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#FieldVarMore#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#CmpOp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#AddOp#0;class#Analyzer#0" expanded="true" />
+            <element signature="method#MultOp#0;class#Analyzer#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="method#TreeNode#0;class#TreeNode#0" expanded="true" />
+            <element signature="method#addSon#0;class#TreeNode#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="method#MultiSyntaxException#0;class#MultiSyntaxException#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="method#IllegalSyntaxException#0;class#IllegalSyntaxException#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Dictionary#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TreeWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TreeWriter#0;class#TreeWriter#0" expanded="true" />
+            <element signature="method#writeTree#0;class#TreeWriter#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java" />
     <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -801,14 +969,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java" />
     <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -850,9 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-          <folding>
-            <element signature="method#FileInputStream#0;class#FileInputStream#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="4621" column="9" lean-forward="true" selection-start-line="4621" selection-start-column="9" selection-end-line="4621" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,9 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="1454" column="14" lean-forward="false" selection-start-line="1454" selection-start-column="14" selection-end-line="1454" selection-end-column="14" />
-          <folding>
-            <element signature="method#hashCode#0;class#String#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,26 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="method#IllegalSyntaxException#0;class#IllegalSyntaxException#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/MultiSyntaxException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -962,7 +1096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
+        <state relative-caret-position="390">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -973,7 +1107,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/lexical/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
+        <state relative-caret-position="2085">
           <caret line="139" column="29" lean-forward="false" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1006,9 +1140,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#errOut#0;class#Main#0" expanded="true" />
+            <element signature="initializer##0;class#Main#0" expanded="true" />
+            <element signature="method#main#0;class#Main#0" expanded="true" />
+            <element signature="method#checkArgs#0;class#Main#0" expanded="true" />
+            <element signature="method#generateHelpLine#0;class#Main#0" expanded="true" />
+            <element signature="method#help#0;class#Main#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="method#TreeNode#0;class#TreeNode#0" expanded="true" />
+            <element signature="method#addSon#0;class#TreeNode#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TokenWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TreeWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TreeWriter#0;class#TreeWriter#0" expanded="true" />
+            <element signature="method#writeTree#0;class#TreeWriter#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/IllegalSyntaxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="method#IllegalSyntaxException#0;class#IllegalSyntaxException#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/Analyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7720">
+        <state relative-caret-position="-7455">
           <caret line="746" column="0" lean-forward="false" selection-start-line="746" selection-start-column="0" selection-end-line="746" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1081,66 +1288,6 @@
             <element signature="method#CmpOp#0;class#Analyzer#0" expanded="true" />
             <element signature="method#AddOp#0;class#Analyzer#0" expanded="true" />
             <element signature="method#MultOp#0;class#Analyzer#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/a.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#errOut#0;class#Main#0" expanded="true" />
-            <element signature="initializer##0;class#Main#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="true" />
-            <element signature="method#checkArgs#0;class#Main#0" expanded="true" />
-            <element signature="method#generateHelpLine#0;class#Main#0" expanded="true" />
-            <element signature="method#help#0;class#Main#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/syntax/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="method#TreeNode#0;class#TreeNode#0" expanded="true" />
-            <element signature="method#addSon#0;class#TreeNode#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TokenWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bugjlu/snlcompiler/ui/TreeWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TreeWriter#0;class#TreeWriter#0" expanded="true" />
-            <element signature="method#writeTree#0;class#TreeWriter#0" expanded="true" />
           </folding>
         </state>
       </provider>
